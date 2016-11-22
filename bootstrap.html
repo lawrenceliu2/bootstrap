@@ -2,15 +2,18 @@
 <html>
   <head>
     <title>Bootstrap Fun!</title>
+    <!-- This allows us to utilize bootstrap without having to download or use any other files. -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
   </head>
+  
   <body>
     <div class="container">
       <div class="row">
         <div class="col-md-3">
           <h1>Buttons</h1>
+	  <!-- Giving each button a class determines its look, usually just a change in color while btn-link gives a transparent link button. -->
           <button type="button" class="btn btn-default">Default</button>
           <button type="button" class="btn btn-primary">Primary</button>
           <button type="button" class="btn btn-success">Success</button>
@@ -19,8 +22,10 @@
           <button type="button" class="btn btn-danger">Danger</button>
           <button type="button" class="btn btn-link">Link</button>
         </div>
+	
         <div class="col-md-6">
           <h1>Tables</h1>
+	  <!-- You can have more than one class, and each class adds on certain properties. -->
           <table class="table table-bordered table-hover">
             <thead>
               <tr>
@@ -53,6 +58,7 @@
             </tbody>
           </table>
         </div>
+	
         <div class="col-md-3">
           <h1>Forms</h1>
           <form>
@@ -67,6 +73,22 @@
             <button type="submit" class="btn btn-default">Submit</button>
           </form>
         </div>
+
+	<div class="col-md-4">
+	  <p class="lead">Text is mostly unchanged in Bootstrap.</p>
+	  You can <mark>highlight</mark> text.
+	  <br>
+	  <br>
+	  And you can <del>delete lines like this</del>.
+	  <br>
+	  <br>
+	  <blockquote>You can insert quotes.</blockquote>
+	  <blockquote>And you can credit people too.
+	    <footer>Lawrence Liu, <cite>November 21, 2016</cite></footer>
+	  </blockquote>
+	  That's about it.
+	</div>
+	
       </div>
     </div>
   </body>
