@@ -11,13 +11,35 @@
   <body>
     <div class="container">
       <div class="row">
+	
+	<div class="col-md-4">
+	  <h1>Text</h1>
+	  <p>Text is mostly unchanged in Bootstrap.</p>
+	  <p>You can <mark>highlight</mark> text with <code>&lt;mark&gt;words&lt;/mark&gt;</code>.</p>
+	  <p>And you can <del>delete lines</del> by using <code>&lt;del&gt;words&lt;/del&gt;</code>.</p>
+	  <p><blockquote>You can insert quotes with <code>&lt;blockquote&gt;words&lt;/blockquote&gt;</code>.</blockquote></p>
+	  <p><blockquote>And you can credit people too by adding <code>&lt;footer&gt;A person &lt;cite&gt;on a day&lt;/cite&gt;&lt;/footer&gt;</code>.
+	    <footer>Lawrence Liu, <cite>November 21, 2016</cite></footer>
+	  </blockquote></p>
+	</div>
+
+	
+	<div class="col-md-4 col-md-offset-4">
+	  <h1>Images</h1>
+	  <p>Images are mostly the same in Bootstrap too.</p>
+	  <p><img src="http://www.potato.es/wp-content/uploads/potato-slider.png" class="img-responsive"></p>
+	  <p>Use the <code>&lt;img&gt;</code> tag with <code>scr="potato.png"</code> as usual. But by adding <code>class="img-responsive"</code>, the image changes size depending on its container and your screen size.</p>
+	  <pre style="white-space: pre-wrap;">&lt;img src="http://www.potato.es/wp-content/uploads/potato-slider.png" class="img-responsive"&gt;</pre>
+	</div>
+	
+	
         <div class="col-md-3">
           <h1>Buttons</h1>
 	      <!-- Giving each button a class determines its look, usually just a change in color while btn-link gives a transparent link button. -->
           <p>You can create buttons of different styles with the <code>&lt;button&gt;</code> tag. To set a style, add the Bootstrap class <code>btn-&lt;STYLE&gt;</code>.</p>
           <p>Example Code:</p>
-          <pre style="white-space: pre-wrap;">
-&lt;button type="button" class="btn btn-default"&gt;Default&lt;/button&gt;</pre>
+          <pre style="white-space: pre-wrap;">&lt;button type="button" class="btn btn-default"&gt;Default&lt;/button&gt;</pre>
+	  
           <p>Example Buttons of different styles:<br><small>(hint: these are also in a table)</small></p>
           <div class="container-fluid">
             <div class="row">
@@ -51,34 +73,32 @@
             </div>
           </div>
         </div>
+
 	
-        <div class="col-md-6">
+        <div class="col-md-5">
           <h1>Tables</h1>
 	      <!-- You can have more than one class, and each class adds on certain properties. -->
           <p>Tables are created with the default <code>&lt;table&gt;</code> class. To enable bootstrap tables, add the class <code>table</code>. To set a style, add class <code>table-&ltSTYLE&gt;</code>. Another fun thing to add is class <code>table-hover</code>, which changes the color of rows as you hover over it.</p>
           <p>To have a bold first row and seperator, use the <code>&lt;thead&gt;</code> tag to enclose the first row your of your <code>&lt;table&gt;</code>. In addition, for headers, you must use the <code>&lt;th&gt;</code> tag within your <code>&lt;tr&gt;</code>s. instead of the default <code>&lt;td&gt;</code>. The rest of your table should be enclosed in a <code>&lt;tbody&gt;</code> tag.</p>
-          <p>Example Code:</p>
-          
+          <p>Example Code:</p>   
           <pre style="white-space: pre-wrap;">
-            <table class="table table-default table-hover">
-            <thead>
-              <tr>
-                <th>Name</th>
-                <th>ID</th>
-                <th>Password</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Lawrence</td>
-                <td>673647859</td>
-                <td>2jk45v2j3v5</td>
-              </tr>
-            </tbody>
-            </table>
-          </pre>
+&lt;table class="table table-default table-hover"&gt;
+   &lt;thead&gt;
+      &lt;tr&gt;
+         &lt;th>Name&lt;/th&gt;
+         &lt;th>ID&lt;/th&gt;
+         &lt;th>Password&lt;/th&gt;
+      &lt;/tr&gt;
+   &lt;/thead&gt;
+   &lt;tbody&gt;
+      &lt;tr&gt;
+         &lt;td>Lawrence&lt;/td&gt;
+         &lt;td>673647859&lt;/td&gt;
+         &lt;td>2jk45v2j3v5&lt;/td&gt;
+      &lt;/tr&gt;
+   &lt;/tbody&gt;
+&lt;/table&gt;</pre>
           
-
           <table class="table table-default table-hover">
             <thead>
               <tr>
@@ -111,9 +131,25 @@
             </tbody>
           </table>
         </div>
+
 	
-        <div class="col-md-3">
+        <div class="col-md-4">
           <h1>Forms</h1>
+	  <p>Instead of using <code>&lt;form&gt;</code>, in Bootstrap we use <code>&lt;input&gt;</code>.</p>
+	  <p>We can change the <code>&lt;type&gt;</code> of the input to determine whether its a text field for emails, passwords, checkbox, radio button, etc.</p>
+	  <p>Example Code:</p>
+	  <pre style="white-space: pre-wrap;">&lt;form&gt;
+&lt;div class="form-group"&gt;
+   &lt;label for="emailz"&gt;Email address&lt;/label&gt;
+   &lt;input type="email" class="form-control" id="emailz" placeholder="Email"&gt;
+&lt;/div&gt;
+&lt;div class="form-group"&gt;
+   &lt;label for="pw"&gt;Password&lt;/label&gt;
+   &lt;input type="password" class="form-control" id="pw" placeholder="Password"&gt;
+&lt;/div&gt;
+&lt;button type="submit" class="btn btn-default">Submit&lt;/button&gt;
+&lt;/form&gt;</pre>
+	    
           <form>
             <div class="form-group">
               <label for="emailz">Email address</label>
@@ -125,34 +161,8 @@
             </div>
             <button type="submit" class="btn btn-default">Submit</button>
           </form>
+	  <br>
         </div>
-
-	<div class="col-md-4">
-	  <h1>Text</h1>
-	  You can <mark>highlight</mark> text.
-	  <br>
-	  <br>
-	  And you can <del>delete lines like this</del>.
-	  <br>
-	  <br>
-	  <blockquote>You can insert quotes.</blockquote>
-	  <blockquote>And you can credit people too.
-	    <footer>Lawrence Liu, <cite>November 21, 2016</cite></footer>
-	  </blockquote>
-	  That's about it.
-	</div>
-
-	<div class="col-md-4">
-	  <h1>Images</h1>
-	  Images are mostly the same in Bootstrap too.
-	  <br>
-	  <br>
-	  <img src="http://www.potato.es/wp-content/uploads/potato-slider.png" class="img-responsive">
-	  Use the <code>&lt;img&gt;</code> tag with <code>scr="potato.png"</code> as usual. But by adding <code>class="img-responsive"</code>, the image changes size depending on its container and your screen size.
-	  <br>
-	  <br>
-	  <pre>&lt;img src="http://www.potato.es/wp-content/uploads/potato-slider.png" class="img-responsive"&gt;</pre>
-	</div>
 
       </div>
     </div>
